@@ -40,8 +40,8 @@ public class NestedJarClassLoader extends ClassLoader {
                     
                     while ((nestedEntry = nestedJarStream.getNextJarEntry()) != null) {
                         if (nestedEntry.getName().contains(basePackageName) && 
-                        		nestedEntry.getName().contains(".class") &&
-                                !nestedEntry.getName().contains("$")) {
+                            nestedEntry.getName().contains(".class") &&
+                            !nestedEntry.getName().contains("$")) {
                             
                             int length = (int) nestedEntry.getSize();
                             byte[] classBytes = new byte[length];
@@ -63,7 +63,7 @@ public class NestedJarClassLoader extends ClassLoader {
                 }
             }
             topJarStream.close();
-			break;
+            break;
         }
      }
 
