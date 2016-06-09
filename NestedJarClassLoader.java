@@ -60,11 +60,10 @@ public class NestedJarClassLoader extends ClassLoader {
                         }
                     }
                     nestedJarStream.close();
-                    break;
                 }
             }
             topJarStream.close();
-            break;
+			break;
         }
      }
 
