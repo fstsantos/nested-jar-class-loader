@@ -22,7 +22,7 @@ public class NestedJarClassLoader extends ClassLoader {
      * @param jarName The name of the nested jar, it doesn't have to be the exact name of the jar,
      * 		          just a substring, ex: "name-of-jar"
      */
-    public void loadSwitchTags(String basePackage, String jarName) {
+    public void loadNestedJar(String basePackage, String jarName) {
         String basePackageName = basePackage.replace(".", "/");
     	String strPath = "classpath*:" + basePackageName + "/**/*";
         Resource[] resources = new PathMatchingResourcePatternResolver().getResources(strPath);
