@@ -9,7 +9,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 public class NestedJarClassLoader extends ClassLoader {
 
-	private static final Logger logger = LoggerFactory.getLogger(NestedJarClassLoader.class);
+    private static final Logger logger = LoggerFactory.getLogger(NestedJarClassLoader.class);
 	
     public NestedJarClassLoader(ClassLoader parent) {
         super(parent);
